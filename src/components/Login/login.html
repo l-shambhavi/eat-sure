@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d8d7d7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            /*background: url("images/login_bg.png");*/
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        
+        .login-container {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        
+        .logo img {
+            width: 150px;
+            height: 150px;
+                    }
+        
+        h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        .benefits {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+        }
+        
+        .benefits li {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        form {
+            text-align: left;
+        }
+        
+        label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            display: block;
+        }
+        
+        input[type="text"], input[type="password"] {
+            padding: 10px;
+            width: calc(100% - 22px);
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        p {
+            font-size: 12px;
+            color: #888;
+            margin-top: 20px;
+        }
+        
+        p a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        p a:hover {
+            text-decoration: underline;
+        }
+        .lo{
+            margin-bottom: 20px;
+        }
+        .link-button{
+            color:white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="logo">
+                <img src="images/login-logo.png" alt="logo">
+            </div>
+            <h2>LOGIN</h2>
+            
+            <form id="login-form">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                
+                <button type="submit" id="login-button" class="lo">Login</button>
+                <button type="button" id="register-button" class="lo">Register</button>
+            </form>
+            
+            <p><a href="registration.html" class="link-button">Don't have an account? Register</a></p>
+        </div>
+    </div>
+
+    <script src="Login.js"></script>
+</body>
+</html>
